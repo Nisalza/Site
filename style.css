@@ -10,6 +10,16 @@ body{
     color: black;
 }
 
+@font-face {
+    font-family: 'Magnolia Script';
+    src: local('Magnolia Script'), local('Magnolia-Script'), 
+    url('fonts/Magnoliascript.woff2') format('woff2'), 
+    url('fonts/Magnoliascript.woff') format('woff'), 
+    url('fonts/Magnoliascript.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
 .container{
 	max-width: 1024px;
 	min-width: 512px;
@@ -22,15 +32,18 @@ body{
 	clear: both;
 }
 
-.head,
-.footer{
+header,
+footer{
 	background-color: #2E2006;
 	width: auto;
 }
 
+main{
+	display: block;
+}
+
 .logo{
 	float: left;
-	border-radius: 20px;
 }
 
 .buttons{
@@ -73,12 +86,12 @@ body{
 	text-decoration: none;
 }
 
-h1{
+body h1{
 	margin: 5px auto 10px;
-	font-family: "Arial" serif;
-	font-size: 48px;
-	line-height: 50px;
-	color: #FAE9CA;
+	font-family: "Magnolia Script", "Arial";
+	font-size: 50px;
+	line-height: 55px;
+	color: #D4B783;
 	text-align: center;
 	line-height: auto;
 }
@@ -125,25 +138,127 @@ h1{
 
 h2 {
 	text-align: center;	
+	font-size: 30px;
+	line-height: 35px;
 }
 
 .features ul{
-	display: table;
+	display: block;
 	border-collapse: collapse;
 	text-align: center;
 }
 
 .features li{
-	display: table-cell;
+	display: inline-block;
+	position: relative;
 	list-style: none;
-	width: 300px;
+	width: 25%;
 	margin-top: 15px;
 	text-align: center;
-	border: 1px solid black;
-	font-size: 20px;
-	padding: 23px 0;
+	border-right: 1px solid black;
+	font-size: 25px;
+	padding: 90px 0 23px;
+	font-weight: bold;
 }
 
 .features li:last-child{
 	margin-right: 0;
+	border: none;
 }
+
+.features li.sleep::before,
+.features li.run::before,
+.features li.bite::before{
+	content: "";
+	position: absolute;
+	width: 100px;
+	height: 100px;	
+}
+
+.features li.sleep::before{		
+	background: url('images/sleep.png') no-repeat;
+	background-size: 100px;		
+	top: 0;
+	left: 74px;
+}
+
+.features li.run::before{
+	background: url('images/run.png') no-repeat;
+	background-size: 65px;	
+	top: 20px;	
+	left: 90px;
+}
+
+.features li.bite::before{
+	background: url('images/bite.png') no-repeat;
+	background-size: 55px;	
+	top: 21px;	
+	left: 90px;
+}
+
+h3{
+	font-size: 25px;
+	line-height: 27px;
+	font-style: italic;
+}
+
+.info-item{
+	margin-bottom: 5px;
+	width: 768px;
+	border-radius: 5px;
+	padding: 5px 10px;
+}
+
+.info-item{
+	transition: 0.5s;
+	background-color: rgba(46, 32, 6, 1);
+	color: #FBEFD1;
+}
+
+.info-item:hover{
+	background-color: rgba(46, 32, 6, 0.1);
+	color: black;	
+}
+
+.info-item:nth-of-type(2){
+	margin-left: 85px;
+}
+
+.info-item:nth-of-type(3){
+	margin-left: 171px;
+}
+
+.info-item:nth-of-type(4){
+	margin-left: 256px;
+}
+
+.info-item span{
+	display: block;
+	width: 100%;
+	text-align: justify;
+}
+
+.all-photos{
+	display: block;
+	margin: auto;
+	overflow: hidden;
+	height: 330px;
+	width: 900px;
+}
+
+.all-photos .slides{
+	width: 300%;	
+	transition: transform 0.8s ease;
+}
+
+.all-photos .slides img{
+	display: inline-block;
+	float: left;
+	width: 300px;
+	height: 300px;	
+}
+
+input[type="radio"]{
+	display: none;
+}
+

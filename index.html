@@ -5,10 +5,10 @@
 		<title>Кошка по имени Рысь</title>
 	</head>
 	<body>
-		<div class="head">
+		<header>
 			<div class="container">
 				<div class="logo-and-btn clearfix">
-					<img src="images/logo.jpg" alt="Логотип" class="logo" width="150px" height="75">
+					<img src="images/logo1.png" alt="Логотип" class="logo" width="150px" height="75">
 					<div class="buttons">
 						<ul>
 							<a href="#" class="btn"><li>Погладить</li></a>
@@ -40,95 +40,115 @@
 					</ul>
 				</div>
 			</div>
-		</div>
-
-		<div class="features" id="features">
-			<div class="container">
-				<h2>Маленький и сладкий! Сладкий и маленький!</h2>
-				<ul>
-					<li class="features-item">Спать!</li>
-					<li class="features-item">Тыгыдыкать!</li>
-					<li class="features-item">Делать кусь!</li>
-				</ul>
-
-			<div class="container"></div>
-			</div>			
-		</div>
-
-		<div class="main-info clearfix" id="main-info">
-			<div class="container">
-				<h3>Что мы знаем об этой кошке?</h3>
-				<div class="info-item"><span class="span-1">Кошка Рысь очень любит поговорить. Ей ничего не стоит просто так ходить по дому и мяукать, даже если рядом никого нет.</span>				
+		</header>
+		
+		<main>		
+			<section class="features" id="features">
+				<div class="container">
+					<h2>Маленький и сладкий! Сладкий и маленький!</h2>
+					<ul>
+						<li class="features-item run">Тыгыдыкать!</li>
+						<li class="features-item sleep">Спать!</li>			
+						<li class="features-item bite">Делать кусь!</li>
+					</ul>
 				</div>
-				<div class="info-item"><span class="span-2">Одно из любимых развлечений этой кошки Рыси — каждые пять минут уходить гулять и тут же возвращаться обратно.</span>					
-				</div>
-				<div class="info-item"><span class="span-3">Если кошку Рысь не взять на ручки, когда она просит, Вам следует готовиться обороняться, ведь Вас непременно ждёт свежия порция Кусь.</span>					
-				</div>
-				<div class="info-item"><span class="span-4">Кошка Рысь очень мягкая и тёплая. Она любит спать на подушках хозяев, со временем занимая 80% мягкой территории.</span>
-				</div>
-				<div class="info-item"><span class="span-5">Мур!</span>
-				</div>
-			</div>
-		</div>
+			</section>
 
-		<div class="photos clearfix" id="photos">
-			<div class="container">
-				<h3>Небольшой фотоальбом</h3>
-				<div class="photo photo-1"></div>
-				<div class="photo photo-2"></div>
-				<div class="photo photo-3"></div>
-				<div class="photo photo-4"></div>
-				<div class="photo photo-5"></div>
-				<div class="photo photo-6"></div>
-				<div class="photo photo-7"></div>
-				<div class="photo photo-8"></div>
-				<div class="photo photo-9"></div>
-			</div>
-		</div>
+			<section class="main-info" id="main-info">
+				<div class="container">
+					<h3>Что мы знаем об этой кошке?</h3>
+					<div class="info-item"><span>Кошка Рысь очень любит поговорить. Ей ничего не стоит просто так ходить по дому и мяукать, даже если рядом никого нет.</span>				
+					</div>
+					<div class="info-item"><span>Одно из любимых развлечений этой кошки Рыси — каждые пять минут уходить гулять и тут же возвращаться обратно.</span>					
+					</div>
+					<div class="info-item"><span>Если кошку Рысь не взять на ручки, когда она просит, Вам следует готовиться обороняться, ведь Вас непременно ждёт свежия порция Кусь.</span>					
+					</div>
+					<div class="info-item"><span>Кошка Рысь очень мягкая и тёплая. Она любит спать на подушках хозяев, со временем занимая 80% мягкой территории.</span>
+					</div>
+				</div>
+			</section>
+			
+			<section class="photos" id="photos">
+				<div class="container">
+					<h3>Небольшой фотоальбом</h3>
+					<div class="all-photos">
+						<input type="radio" id="photo-btn-1" name="my-cat" checked>
+						<input type="radio" id="photo-btn-2" name="my-cat">
+						<input type="radio" id="photo-btn-3" name="my-cat">
+						<input type="radio" id="photo-btn-4" name="my-cat">
+						<input type="radio" id="photo-btn-5" name="my-cat">
+						<input type="radio" id="photo-btn-6" name="my-cat">
+						<input type="radio" id="photo-btn-7" name="my-cat">
+						<input type="radio" id="photo-btn-8" name="my-cat">
+						<input type="radio" id="photo-btn-9" name="my-cat">
 
-		<div class="toys clearfix" id="toys">
-			<div class="container">
-				<h3>Любимые игрушки Кошки</h3>
-				<div class="toy-item">Цепочка</div>
-				<div class="toy-item">Киндер</div>
-			</div>
-		</div>
+						<div class="photo-controls">
+							<label for="photo-btn-1"></label>
+							<label for="photo-btn-2"></label>
+							<label for="photo-btn-3"></label>
+							<label for="photo-btn-4"></label>
+							<label for="photo-btn-5"></label>
+							<label for="photo-btn-6"></label>
+							<label for="photo-btn-7"></label>
+							<label for="photo-btn-8"></label>
+							<label for="photo-btn-9"></label>
+						</div>		
 
-		<div class="quotes clearfix" id="quotes">
-			<div class="container">
-				<h3>Как отзываются о Кошке её хозяева</h3>
-			<blockquote class="quotes-item">				
-				<p class="content">
-					Ой, какой бешенный Рысь!<br>
-					Опять он носится!</p>
-				<cite class="author">Глава семейства</cite>
-			</blockquote>
-			<blockquote class="quotes-item">
-				<p class="content">
-					Ну Рыся, ну слезай давай, мне дела делать нужно.</p>
-				<cite class="author">Приёмная мама Кошки</cite>
-			</blockquote>
-			<blockquote class="quotes-item">
-				<p class="content">
-					Рыся, солнышко, пойдём кушать!<br>
-					Рысь, нет, не кусайся!<br>
-					Ах ты попс мохнатый!</p>
-				<cite class="author">Заводчица пушистой бестии</cite>
-			</blockquote>
-			<blockquote class="quotes-item">
-				<p class="content">
-					Рысь, пойдём домой!<br>
-					Смотри, маленький Рысь домой вернулся!<br>
-					Давай его гладить и чесать!</p>
-				<cite class="author">Личный швейцар Кошки</cite>
-			</blockquote>
-			</div>			
-		</div>
+						<div class="slides">
+							<img src="images/cat/1.jpg" alt="Кошка-картошка" width="300" height="300">
+							<img src="images/cat/2.jpg" alt="Сладко спит" width="300" height="300">
+							<img src="images/cat/3.jpg" alt="Чистюля" width="300" height="300">
+							<img src="images/cat/4.jpg" alt="Лапка грязная" width="300" height="300">
+							<img src="images/cat/5.jpg" alt="Крепко спит" width="300" height="300">
+							<img src="images/cat/6.jpg" alt="Чудо-юдо" width="300" height="300">
+							<img src="images/cat/7.jpg" alt="Задумался" width="300" height="300">
+							<img src="images/cat/8.jpg" alt="Королева" width="300" height="300">
+							<img src="images/cat/9.jpg" alt="Маленький" width="300" height="300">
+						</div>				
+					</div>					
+				</div>
+			</section>
+			
+			<section class="toys" id="toys">
+				<div class="container">
+					<h3>Любимые игрушки Кошки</h3>
+					<div class="toy-item">Цепочка</div>
+					<div class="toy-item">Киндер</div>
+				</div>
+			</section>
 
-		<div class="footer" id="footer">
+			<section class="quotes" id="quotes">
+				<div class="container">
+					<h3>Как отзываются о Кошке её хозяева</h3>
+					<article class="quote-item">
+						<p class="content">Ой, какой бешенный Рысь!<br>
+						Опять он носится!</p>
+						<p class="author">Глава семейства</p>
+					</article>
+					<article class="quote-item">
+						<p class="content">Ну Рыся, ну слезай давай, мне дела делать нужно.</p>
+						<p class="author">Приёмная мама Кошки</p>
+					</article>
+					<article class="quote-item">
+						<p class="content">Рыся, солнышко, пойдём кушать!<br>
+						Рысь, нет, не кусайся!<br>
+						Ах ты попс мохнатый!</p>
+						<p class="author">Заводчица пушистой бестии</p>
+					</article>
+					<article class="quote-item">
+						<p class="content">Рысь, пойдём домой!<br>
+						Смотри, маленький Рысь домой вернулся!<br>
+						Давай его гладить и чесать!</p>
+						<p class="author">Личный швейцар Кошки</p>
+					</article>
+				</div>
+			</section>
+		</main>
+
+		<footer>
 			<div class="container">
 				<div class="logo-and-btn clearfix">
-					<img src="images/logo.jpg" alt="Логотип" class="logo" width="150px" height="75">
+					<img src="images/logo1.png" alt="Логотип" class="logo" width="150px" height="75">
 					<div class="buttons">
 						<ul>
 							<a href="#" class="btn"><li>Погладить</li></a>
@@ -149,6 +169,6 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</footer>
 	</body>
 </html>
