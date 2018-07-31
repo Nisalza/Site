@@ -242,13 +242,55 @@ h3{
 	display: block;
 	margin: auto;
 	overflow: hidden;
-	height: 330px;
 	width: 900px;
+	position: relative;
+}
+
+.all-photos::before,
+.all-photos::after{
+	content: "";
+	width: 1px;
+	height: 1px;
+	position: absolute;
+	border: 20px solid transparent;
+	border-right-color: #2E2006;
+	border-left: none;
+	top: 115px;
+	z-index: 2;
+	transition: opacity 1s, transform 1s;
+	opacity: 0.2;
+}
+
+.all-photos::before:hover,
+.all-photos::after:hover{
+	opacity: 1;
+	transform: scale(1.2);
+}
+
+.all-photos::before{
+	left: 0;
+}
+
+.all-photos::after{
+	right: 0;
+	transform: rotate(180deg);
 }
 
 .all-photos .slides{
 	width: 300%;	
+	height: 330px;
 	transition: transform 0.8s ease;
+}
+
+.all-photos .slides::after{
+	content: "";
+	position: absolute;
+	width: 900px;
+	height: 300px;
+	top: 0;
+	left: 0;
+	background: linear-gradient(to right, 
+		#FBEFD1, transparent 300px, transparent 600px, #FBEFD1);
 }
 
 .all-photos .slides img{
@@ -256,6 +298,7 @@ h3{
 	float: left;
 	width: 300px;
 	height: 300px;	
+	z-index: -5;
 }
 
 input[type="radio"]{
