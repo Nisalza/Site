@@ -257,14 +257,14 @@ h3{
 	border-left: none;
 	top: 115px;
 	z-index: 2;
-	transition: opacity 1s, transform 1s;
+	/*transition: opacity 1s, transform 1s;*/
 	opacity: 0.2;
 }
 
 .all-photos::before:hover,
 .all-photos::after:hover{
 	opacity: 1;
-	transform: scale(1.2);
+	border-width: 25px;
 }
 
 .all-photos::before{
@@ -279,7 +279,6 @@ h3{
 .all-photos .slides{
 	width: 300%;	
 	height: 330px;
-	transition: transform 0.8s ease;
 }
 
 .all-photos .slides::after{
@@ -299,9 +298,69 @@ h3{
 	width: 300px;
 	height: 300px;	
 	z-index: -5;
+	transition: transform 0.8s ease-out;
 }
 
 input[type="radio"]{
 	display: none;
 }
 
+.photo-controls{
+	position: absolute;
+	bottom: 0;
+	left: 305px;
+}
+
+.photo-controls label{
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	margin: 0 3px;
+	border: 3px solid #2E2006;
+	cursor: pointer;
+}
+
+#btn-1:checked ~ .photo-controls label[for="btn-1"],
+#btn-2:checked ~ .photo-controls label[for="btn-2"],
+#btn-3:checked ~ .photo-controls label[for="btn-3"],
+#btn-4:checked ~ .photo-controls label[for="btn-4"],
+#btn-5:checked ~ .photo-controls label[for="btn-5"],
+#btn-6:checked ~ .photo-controls label[for="btn-6"],
+#btn-7:checked ~ .photo-controls label[for="btn-7"],
+#btn-8:checked ~ .photo-controls label[for="btn-8"],
+#btn-9:checked ~ .photo-controls label[for="btn-9"]{
+	background-color: #D4B783;
+}
+
+#btn-1:checked ~ .slides img{	
+	transform: translateX(300px);
+}
+
+#btn-3:checked ~ .slides img{	
+	transform: translateX(-300px);
+}
+
+#btn-4:checked ~ .slides img{	
+	transform: translateX(-600px);
+}
+
+#btn-5:checked ~ .slides img{	
+	transform: translateX(-900px);
+}
+
+#btn-6:checked ~ .slides img{	
+	transform: translateX(-1200px);
+}
+
+#btn-7:checked ~ .slides img{	
+	transform: translateX(-1500px);
+}
+
+#btn-8:checked ~ .slides img{	
+	transform: translateX(-1800px);
+}
+
+#btn-9:checked ~ .slides img{	
+	transform: translateX(-2100px);
+}
