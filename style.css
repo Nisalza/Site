@@ -406,3 +406,64 @@ input[type="radio"]{
 	background: url(images/container.jpg) no-repeat;
 	background-size: 100% 100%;
 }
+
+.quotes .container{
+	position: relative;
+}
+
+.quote-item{
+	position: relative;
+}
+
+.block-quotes{
+	width: 60%;
+}
+
+.quotes .content{	
+	padding: 10px;
+	border-left: 3px solid #2E2006;
+	margin-bottom: 0px;
+	padding-left: 60px;
+	text-shadow: 3px 3px 2px #D4B783;
+}
+
+.quotes .content::before{
+	content: "";
+	position: absolute;
+	width: 40px;
+	height: 35px;
+	left: 10px;
+	top: -3px;
+	background: url(images/quotes.png) no-repeat;
+	transform: rotate(180deg);
+	filter: sepia(5);
+	background-size: 100% 100%;
+}
+
+.quotes .author{
+	color: #9d6e15;
+	font-style: italic;
+	font-size: 16px;
+	margin-left: 30px;
+	margin-top: 5px;
+	text-decoration: underline;
+	filter: grayscale(0.6);
+}
+
+.cat-mouse{
+	width: 40%;
+	height: 100%;
+	position: absolute;
+	background: url(images/cat-quotes.png) no-repeat;
+	background-size: 100% 100%;
+	top: 0;
+	right: 10%;
+	filter: saturate(2) sepia(0.5);
+	transition: background 0.1s;
+	transition-delay: 1s;
+}
+
+.cat-mouse:hover{
+	background: url(images/joke.png) no-repeat;
+	background-size: 100% 100%;	
+}
