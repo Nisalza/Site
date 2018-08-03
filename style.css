@@ -467,3 +467,47 @@ input[type="radio"]{
 	background: url(images/joke.png) no-repeat;
 	background-size: 100% 100%;	
 }
+
+footer .contacts{
+	float: left;
+}
+
+footer .contacts ul{
+	text-decoration: none;
+}
+
+footer .contacts li{
+	display: inline-block;	
+	margin-right: 5px;
+}
+
+footer .contacts a{
+	display: block;
+	width: 40px;
+	height: 40px;
+	background: url(images/sprites.png) no-repeat;
+	background-size: 400% 100%;
+}
+
+footer .contacts li .insta{
+	background-position: -60px 0;
+}
+
+footer .contacts li .twi{
+	background-position: -121px 0;
+}
+
+footer .github{
+	float: right;
+	text-align: right;
+	height: 60px;
+}
+
+footer .github a{
+	font-family: "Magnolia Script", "Arial";
+	display: block;
+	margin-top: 26px;
+	letter-spacing: 1px;
+	word-spacing: 2px;
+	color: #FBEFD1;
+}
